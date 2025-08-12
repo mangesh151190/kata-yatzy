@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
@@ -62,6 +64,21 @@ public class YatzyJavaTest {
         assertEquals(6, new YatzyJava(4, 4, 6, 5, 5).sixes());
         assertEquals(18, new YatzyJava(6, 5, 6, 6, 5).sixes());
     }
+
+
+    @ParameterizedTest
+    @CsvSource({
+            "3, 1,2,3,3,3, 9",   // three threes
+            "3, 1,2,4,5,6, 0",   // no threes
+            "2, 2,2,2,2,2, 10",  // all twos
+            "4, 1,2,3,4,5, 4"    // one four
+    })
+    public void testSumMatchingParameterized(int target, int d1, int d2, int d3, int d4, int d5, int expected) {
+        int[] dice = {d1, d2, d3, d4, d5};
+        int result = YatzyJava.sumMatching(target, dice);
+        assertEquals(expected, result);
+    }
+
 
     @Test
     public void one_pair() {

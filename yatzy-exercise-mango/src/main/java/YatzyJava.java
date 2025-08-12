@@ -61,30 +61,24 @@ public class YatzyJava {
     }
 
     public int fours() {
-        int sum;
-        sum = 0;
-        for (int at = 0; at != 5; at++) {
-            if (dice[at] == 4) {
-                sum += 4;
-            }
-        }
-        return sum;
+        return sumMatching(4, dice);
     }
 
     public int fives() {
-        int s = 0;
-        int i;
-        for (i = 0; i < dice.length; i++)
-            if (dice[i] == 5)
-                s = s + 5;
-        return s;
+        return sumMatching(5, dice);
     }
 
     public int sixes() {
+        return sumMatching(6, dice);
+    }
+
+    static int sumMatching(int target, int[] dice) {
         int sum = 0;
-        for (int at = 0; at < dice.length; at++)
-            if (dice[at] == 6)
-                sum = sum + 6;
+        for (int die : dice) {
+            if (die == target) {
+                sum += target;
+            }
+        }
         return sum;
     }
 
