@@ -1,8 +1,7 @@
 package com.yatzy.output.impl;
 
-// File: src/test/java/com/yatzy/output/impl/ConsoleOutputFormatterTest.java
 import com.yatzy.model.Category;
-import com.yatzy.output.impl.ConsoleOutputFormatter;
+import com.yatzy.output.impl.ConsoleOutputFormatter
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
