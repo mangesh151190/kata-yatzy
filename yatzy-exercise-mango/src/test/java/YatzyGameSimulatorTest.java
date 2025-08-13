@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class YatzyGameSimulatorTest {
 
@@ -19,9 +19,9 @@ public class YatzyGameSimulatorTest {
         String output = outContent.toString();
         System.setOut(originalOut);
 
-        assertTrue(output.contains("ROLL"));
-        assertTrue(output.contains("You've chosen"));
-        assertTrue(output.contains("Score:"));
-        assertTrue(output.contains("You've got"));
+        assertThat(output).contains("ROLL");
+        assertThat(output).contains("You've chosen");
+        assertThat(output).contains("Score:");
+        assertThat(output).contains("You've got");
     }
 }
