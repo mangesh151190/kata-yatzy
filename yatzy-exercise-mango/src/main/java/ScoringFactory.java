@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+/**
+ * Factory class to create scoring strategies based on the Yatzy game categories.
+ * This class provides a method to get the appropriate scoring strategy for a given category.
+ */
 public class ScoringFactory {
     public static ScoreStrategy getStrategy(Category category) {
         switch (category) {

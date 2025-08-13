@@ -1,3 +1,7 @@
+/**
+ * Enum representing the categories in a Yatzy game.
+ * Each category corresponds to a scoring option in the game.
+ */
 public enum Category {
     CHANCE,
     YATZY,
