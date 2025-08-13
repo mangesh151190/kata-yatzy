@@ -22,6 +22,9 @@ The codebase includes:
 
 ### Build and Test
 
-```bash
-./gradlew build
-./gradlew test
+Run the tests
+# linux
+./gradlew check
+
+# windows
+.\gradlew.bat check

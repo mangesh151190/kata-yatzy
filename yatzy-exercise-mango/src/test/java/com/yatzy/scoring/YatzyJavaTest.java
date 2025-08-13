@@ -1,3 +1,5 @@
+package com.yatzy.scoring;
+
 import com.yatzy.model.DiceRoll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

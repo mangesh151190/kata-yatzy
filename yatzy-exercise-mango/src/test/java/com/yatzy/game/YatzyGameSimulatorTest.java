@@ -1,6 +1,6 @@
-import com.yatzy.game.YatzyGameSimulator;
-import org.junit.jupiter.api.Test;
+package com.yatzy.game;
 
+import org.junit.jupiter.api.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
