@@ -1,7 +1,6 @@
 package com.yatzy.output.impl;
 
 import com.yatzy.model.Category;
-import com.yatzy.output.impl.ConsoleOutputFormatter
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
