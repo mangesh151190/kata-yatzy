@@ -1,3 +1,5 @@
+package com.yatzy.output;
+
 import java.io.PrintStream;
 
 /**

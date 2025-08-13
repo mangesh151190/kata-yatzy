@@ -1,3 +1,7 @@
+package com.yatzy.scoring;
+
+import com.yatzy.model.DiceRoll;
+
 import java.util.Arrays;
 
 /**
@@ -257,7 +261,7 @@ public class YatzyJava {
      * @param dice the array of dice values
      * @return the sum of all dice matching the target value
      */
-    static int sumMatching(int target, int[] dice) {
+    public static int sumMatching(int target, int[] dice) {
         int sum = 0;
         for (int die : dice) {
             if (die == target) {

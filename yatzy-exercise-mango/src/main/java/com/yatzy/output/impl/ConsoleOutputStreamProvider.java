@@ -1,3 +1,7 @@
+package com.yatzy.output.impl;
+
+import com.yatzy.output.OutputStreamProvider;
+
 import java.io.PrintStream;
 
 /**

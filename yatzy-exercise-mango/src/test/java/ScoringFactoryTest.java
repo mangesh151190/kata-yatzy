@@ -1,3 +1,6 @@
+import com.yatzy.model.Category;
+import com.yatzy.scoring.ScoreStrategy;
+import com.yatzy.scoring.ScoringFactory;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -1,3 +1,5 @@
+package com.yatzy.scoring;
+
 /**
  * Interface for scoring strategies in a dice game.
  */

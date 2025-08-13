@@ -1,3 +1,7 @@
+package com.yatzy.scoring;
+
+import com.yatzy.model.Category;
+
 import java.util.Arrays;
 
 /**

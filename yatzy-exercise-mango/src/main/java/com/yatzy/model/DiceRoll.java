@@ -1,3 +1,5 @@
+package com.yatzy.model;
+
 /**
  * DiceRoll class represents a roll of 5 dice.
  * It ensures that exactly 5 dice values are provided upon instantiation.

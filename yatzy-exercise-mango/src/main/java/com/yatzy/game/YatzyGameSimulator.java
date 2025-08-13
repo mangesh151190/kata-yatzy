@@ -1,3 +1,13 @@
+package com.yatzy.game;
+
+import com.yatzy.model.Category;
+import com.yatzy.output.OutputFormatter;
+import com.yatzy.output.OutputStreamProvider;
+import com.yatzy.output.impl.ConsoleOutputFormatter;
+import com.yatzy.output.impl.ConsoleOutputStreamProvider;
+import com.yatzy.scoring.ScoreStrategy;
+import com.yatzy.scoring.ScoringFactory;
+
 import java.util.Random;
 
 /**

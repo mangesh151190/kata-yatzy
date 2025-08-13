@@ -1,3 +1,8 @@
+package com.yatzy.output.impl;
+
+import com.yatzy.model.Category;
+import com.yatzy.output.OutputFormatter;
+
 /**
  * ConsoleOutputFormatter is a class that implements the OutputFormatter interface.
  * It formats the output of a roll result for display in the console.

@@ -1,3 +1,5 @@
+package com.yatzy.model;
+
 /**
  * Enum representing the categories in a Yatzy game.
  * Each category corresponds to a scoring option in the game.

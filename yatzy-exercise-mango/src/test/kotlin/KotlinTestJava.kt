@@ -1,3 +1,5 @@
+import com.yatzy.model.DiceRoll
+import com.yatzy.scoring.YatzyJava
 import org.assertj.core.api.Assertions
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
