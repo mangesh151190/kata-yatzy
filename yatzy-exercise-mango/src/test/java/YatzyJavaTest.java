@@ -126,4 +126,50 @@ public class YatzyJavaTest {
         assertEquals(18, YatzyJava.fullHouse(6, 2, 2, 2, 6));
         assertEquals(0, YatzyJava.fullHouse(2, 3, 4, 5, 6));
     }
+
+    @Test
+    public void one_pair_no_pair_returns_zero() {
+        assertEquals(0, YatzyJava.score_pair(1, 2, 3, 4, 5));
+    }
+
+    @Test
+    public void two_pair_only_one_pair_returns_zero() {
+        assertEquals(0, YatzyJava.two_pair(1, 1, 2, 3, 4));
+    }
+
+    @Test
+    public void two_pair_three_of_a_kind_only_returns_two_pair_score() {
+        assertEquals(6, YatzyJava.two_pair(1, 1, 2, 2, 2)); // 1+1+2+2
+    }
+
+    @Test
+    public void three_of_a_kind_no_triplet_returns_zero() {
+        assertEquals(0, YatzyJava.three_of_a_kind(1, 2, 3, 4, 5));
+    }
+
+    @Test
+    public void four_of_a_kind_no_quad_returns_zero() {
+        assertEquals(0, YatzyJava.four_of_a_kind(1, 1, 1, 2, 3));
+    }
+
+    @Test
+    public void smallStraight_wrong_combination_returns_zero() {
+        assertEquals(0, YatzyJava.smallStraight(1, 2, 2, 4, 5));
+    }
+
+    @Test
+    public void largeStraight_wrong_combination_returns_zero() {
+        assertEquals(0, YatzyJava.largeStraight(1, 2, 3, 4, 5));
+    }
+
+    @Test
+    public void fullHouse_all_same_returns_zero() {
+        assertEquals(0, YatzyJava.fullHouse(4, 4, 4, 4, 4));
+    }
+
+    @Test
+    public void fullHouse_no_pair_or_triplet_returns_zero() {
+        assertEquals(0, YatzyJava.fullHouse(1, 2, 3, 4, 5));
+    }
+
 }
